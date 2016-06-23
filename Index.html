@@ -39,9 +39,35 @@
             <li>cliquer sur l'icône "New"</li>
             <li>puis "Create Repository"</li>
             <li>sur la nouvelle page, choisir la rubrique "create a new repository on the command line"</li>
-            <li>Copier successivement chaque commande puis la coller dans la console GNU-Linux</li>
+            <li></li>
           </ul>
           <h1 id="Créer un dépôt local">Créer un dépôt local </h1>
+          <!-- tableau à 2 colonnes pour plus de clarté -->
+            <table>
+              <tr>
+                <td>echo "# NomDépot" >> README.md<</td>
+                <td>création du fichier de description README au format MarkDown </td>
+              </tr>
+              <tr>
+                <td>git init</td>
+                <td>Création du dépot (Repository)</td>
+              </tr>
+              <tr>
+                <td>git add README.md</td>
+                <td>ajout du fichier README.md pour la prochaine sauvegarde</td>
+              </tr>
+              <tr>
+                <td> git commit -m "first commit"</td>
+                <td>Première sauvegarde avec un commentaire</td>
+              </tr>
+
+            </table>
           <h1 id="Synchroniser">Synchroniser</h1>
+          <table>
+            <tr>
+              <td>git push origin master</td>
+              <td>envoi de la sauvegarde sur le serveur distant</td>
+            </tr>
+          </table>
         </body>
         </html>
