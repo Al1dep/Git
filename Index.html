@@ -3,23 +3,45 @@
 <head>
   <meta charset="utf-8" />
   <title>Utilisation de Git</title>
-  </head>
-  <body>
-    <h1>Sommaire</h1>
-    <!-- Sommaire avec liens actifs -->
-        <h2><a href="#Installation sous GNU-Linux">Installation sous GNU-Linux</a></h2>
-        <h2><a href="#Inscription sur le site">Inscription sur le site</a></h2>
-        <h2><a href="#Créer une clef SSH">Créer une clef SSH</a></h2>
-        <h2><a href="#Créer un dépôt sur Github">Créer un dépôt sur Github</a></h2>
-        <h2><a href="#Créer un dépôt local"Créer un dépôt local</a></h2>
-        <h2><a href="#Synchroniser">Synchroniser</a></h2>
+</head>
+<body>
+  <h1>Sommaire</h1>
+  <!-- Sommaire avec liens actifs -->
+  <h2><a href="#Installation sous GNU-Linux">Installation sous GNU-Linux</a></h2>
+  <h2><a href="#Inscription sur le site">Inscription sur le site</a></h2>
+  <h2><a href="#Créer une clef SSH">Créer une clef SSH</a></h2>
+  <h2><a href="#Créer un dépôt sur Github">Créer un dépôt sur Github</a></h2>
+  <h2><a href="#Créer un dépôt local"Créer un dépôt local</a></h2>
+    <h2><a href="#Synchroniser">Synchroniser</a></h2>
 
-
+    <!-- Détail des rubriques -->
     <h1 id="Installation sous GNU-Linux">Installation sous GNU-Linux</h1>
+    sudo apt-get install git
     <h1 id="Inscription sur le site">Inscription sur le site</h1>
+    http:/­/gi­thu­b.c­om/­sig­nup­/free
+    <br />
     <h1 id="Créer une clef SSH">Créer une clef SSH</h1>
-    <h1 id="Créer un dépôt sur Github">Créer un dépôt sur Github </h1>
-    <h1 id="Créer un dépôt local">Créer un dépôt local </h1>
-    <h1 id="Synchroniser">Synchroniser</h1>
-  </body>
-  </html>
+    <!-- liste ordonnée -->
+    <ol>
+      <li> Créer la clef ssh </li>
+      ssh-k­eygen -t rsa -C "­nom@mond­oma­in.c­om­"
+      <br />
+      <li> Copier la clef</li>
+      pbcopy <~/.ss­h/i­d_r­sa.pub
+      <li> Accès au compte GitHub</li>
+      ssh -T git@Gi­thu­b.com
+      <p>Vous pouvez maintenant faire un git clone :<br />
+        git clone git@Gi­thu­b.com pseudo/ HYPERLINK <re­pos­ito­ry_­lin­k></p>
+        <h1 id="Créer un dépôt sur Github">Créer un dépôt sur Github </h1>
+        <p> Depuis https://github.com/NomUtilisateur?tab=repositories<br />
+          <!-- liste ordonnée -->
+          <ul>
+            <li>cliquer sur l'icône "New"</li>
+            <li>puis "Create Repository"</li>
+            <li>sur la nouvelle page, choisir la rubrique "create a new repository on the command line"</li>
+            <li>Copier successivement chaque commande puis la coller dans la console GNU-Linux</li>
+          </ul>
+          <h1 id="Créer un dépôt local">Créer un dépôt local </h1>
+          <h1 id="Synchroniser">Synchroniser</h1>
+        </body>
+        </html>
